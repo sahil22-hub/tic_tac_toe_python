@@ -1,11 +1,5 @@
 def sum(a, b, c ):
-    return a + b + c
-
-# def checkValidation(xState, zState):
-#     for value in xState:
-#         if(value == "X"):
-
-    
+    return a + b + c  
 
 def printBoard(xState, zState):
     displaying_value = []
@@ -19,6 +13,7 @@ def printBoard(xState, zState):
     print(f"--|---|---")
     print(f"{displaying_value[6]} | {displaying_value[7]} | {displaying_value[8]} ") 
 
+# Checking if any user is in win state
 def checkWin(xState, zState, player_name):
     wins = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]]
     for win in wins:
